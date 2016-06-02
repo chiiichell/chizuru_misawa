@@ -62,9 +62,7 @@ h4, h5 {
 
 /*-------  ここまで共通のCSS（変更不要） --------*/
 
-/*------- ここからCSSを書き始めてください --------*/
-
-/* --Header-- */
+/* header */
 header {
   height: 50px;
   position: fixed;
@@ -73,7 +71,6 @@ header {
   right: 0;
   background-color: #fff;
   line-height: 50px;
-  box-shadow: -1px 1px 1px rgba(0,0,0,0.1);
   z-index: 10;
 }
 
@@ -108,13 +105,13 @@ header {
   transition: .3s;
 }
 
-/* --Top content-- */
+/* top content */
 .top-section {
   margin: 0 auto;
   text-align: center;
   color: #fff;
-  background-image: url("https://lh3.googleusercontent.com/-0pBHwHkuq28/Uc4W7wyFQZI/AAAAAAAAACs/lS2t4yzF9CMpGEAvrXt7_LLtaKiOYzecgCCo/s128/538.JPG");
-  background-size: contain;
+  height: 700px;
+  background-color: gray;
 }
 
 .inner-bg {
@@ -190,30 +187,57 @@ header {
 }
 
 
-/* home */
-.languages-section {
+/* profile */
+.profile-section {
   padding-bottom: 60px;
   color: #888;
   text-align: center;
 }
 
-.languages-box-wrapper {
+.profile-box-wrapper {
   width: 80%;
   margin: 0 auto;
 }
 
-.languages-box {
+.profile-box {
   display: inline-block;
   vertical-align: top;
   width: 38%;
   padding: 20px;
 }
 
-.languages-box p {
+.profile-box p {
   display: none;
 }
 
-.languages-content {
+.profile-content {
+  height: 80px;
+}
+
+/* works */
+.works-section {
+  padding-bottom: 60px;
+  color: #888;
+  text-align: center;
+}
+
+.works-box-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.works-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 38%;
+  padding: 20px;
+}
+
+.works-box p {
+  display: none;
+}
+
+.works-content {
   height: 80px;
 }
 
@@ -306,96 +330,6 @@ header {
   color: #e8edef !important;
 }
 
-/* --Modal-- */
-.apply-modal-wrapper {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 100;
-  display: none;
-}
-
-.modal {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #e6ecf0;
-  padding: 20px 0 40px;
-  border-radius: 10px;
-  width: 550px;
-  height: 460px;
-  text-align: center;
-  display: block;
-}
-
-.fa-times {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  color: rgba(128, 128, 128, 0.46);
-  cursor: pointer;
-}
-
-.fa-2x {
-  font-size: 2em;
-}
-
-#apply-form {
-  width: 100%;
-}
-
-#apply-form h2 {
-  color: #5f5d60;
-  letter-spacing: 1px;
-  margin-bottom: 40px;
-  margin-top: 20px;
-}
-
-#apply-form input, #apply-form textarea, select {
-  width: 400px;
-  margin-bottom: 15px;
-  font-size: 12px;
-  padding: 10px 10px;
-  border: 1px solid #d0d5d8;
-  border-radius: 5px;
-  display: inline;
-  background-color: white;
-}
-
-#apply-form textarea{
-  max-height: 100px;
-}
-
-select {
-  height: 40px;
-}
-
-#submit-btn {
-  display: inline-block;
-  padding: 14px 160px;
-  background-color: #5dca88;
-  border: none;
-  border-radius: 3px;
-  color: white;
-  margin: 10px auto;
-  cursor: pointer;
-  width: 400px;
-}
-
-option {
-  font-weight: normal;
-  display: block;
-  white-space: pre;
-  min-height: 1.2em;
-  padding: 0px 2px 1px;
-}
-
 /* --Mentors-- */
 .mentors-section {
   text-align: center;
@@ -442,17 +376,19 @@ option {
   overflow: hidden;
 }
 
-/* --Messages-- */
+/* Messages */
 .message-section {
   color: white;
-  background: url("https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/night_view.jpg");
+  background: url("https://lh3.googleusercontent.com/-x9RBGiWQDB4/Uc4XHnPeVdI/AAAAAAAAADE/LSjSXAwHrUQ1Xyiw8iIJi_h1EBDTgGThwCCo/s500/004.JPG");
   background-size: cover;
+  width: 100%;
+  height: 100%;
   text-align: center;
 }
 
 .message-section-inner {
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 140px 0;
+  padding: 300px 0;
   height: 100%;
 }
 
@@ -481,7 +417,6 @@ option {
   width: 58%;
 }
 
-
 .contact-section h3, .contact-section h4 {
   color: white;
 }
@@ -499,9 +434,9 @@ option {
   border: none;
   width: 85%;
   color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Catamaran', sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 100;
   border-radius: 0;
   box-shadow: none;
   transition: all .3s;
@@ -520,14 +455,11 @@ textarea {
 }
 
 .btn-contact {
-  font-family: 'Dosis', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  background: #0dc0c0;
-  border: 1px solid #09b1b9;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  background: gray;
   color: white;
-  box-shadow: inset 0 1px 0 #0fc8c8;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   transition: all .3s;
   margin: 10px 0;
   padding: 15px 35px;
@@ -554,14 +486,14 @@ textarea {
   height: 20px;
 }
 
-/* --Social-- */
+/* Social */
 .social-section {
   text-align: center;
   padding-bottom: 50px;
 }
 
 .social-section h3 {
-  font-weight: 300;
+  font-weight: 100;
 }
 
 .social-icon {
@@ -593,7 +525,6 @@ textarea {
 /* --Footer-- */
 footer {
   text-align: center;
-  padding: 39px 0 36px;
-  background: #222;
-  color: #999;
+  padding-top: 20px;
+  color: gray;
 }

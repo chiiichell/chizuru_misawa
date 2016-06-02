@@ -17,8 +17,8 @@ $(function(){
 
   });
 
-  // 言語一覧
-  $('.languages-box').hover(
+  // profile
+  $('.profile-box').hover(
    function(){
     $(this).find('p').fadeIn(500);
     },
@@ -27,19 +27,15 @@ $(function(){
     }
   );
 
-  // モーダル表示
-  $('.btn-pricing').click(function(){
-      $('#apply-modal').fadeIn();
-      var id = $(this).parents('.price-column').attr('id');
-      var title = $('#' + id).children('h2').text();
-      $('#course-select').val(id);
-      $('#apply-form').children('h2').text('【' + title + '】に申し込む');
-  });
-    
-    // モーダル非表示
-    $('#close-modal').click(function(){
-      $('#apply-modal').fadeOut();
-    });
+// works
+  $('.works-box').hover(
+   function(){
+    $(this).find('p').fadeIn(500);
+    },
+   function(){
+    $(this).find('p').fadeOut(500);
+    }
+  );
 
   // カルーセルスライダー部分
   $('.carousel').carousel({
