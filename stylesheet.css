@@ -96,6 +96,7 @@ header {
 }
 
 .header-menu-left a {
+  text-decoration: none;
   font-weight: 200;
   color: dimgray;
   line-height: 29px;
@@ -113,7 +114,8 @@ header {
 }
 
 .header-menu-sns li {
-  float:left;
+  float: left;
+  text-decoration: none;
 }
 
 .header-menu-sns a {
@@ -219,33 +221,36 @@ header {
   padding-bottom: 20px;
 }
 
-
-/* profile */
-.profile-section {
+/* about */
+.about-section {
   padding-bottom: 60px;
   color: dimgray;
   text-align: center;
-  height: 700px;
+  height: 100%;
 }
 
-.profile-box-wrapper {
+.about-box-wrapper {
   width: 80%;
   margin: 0 auto;
 }
 
-.profile-box {
+.about-box {
   display: inline-block;
   vertical-align: top;
   width: 38%;
   padding: 20px;
 }
 
-.profile-box p {
+.about-box p {
   display: none;
 }
 
-.profile-content {
+.about-content {
   height: 80px;
+}
+
+.about-icon img {
+  max-height: 400px;
 }
 
 /* --skills-- */
@@ -323,48 +328,6 @@ header {
 .works-content {
   height: 80px;
 }
-
-/* --Features-- */
-.features-section-top {
-  text-align: center;
-  height: 376px;
-}
-
-.features-section-bottom {
-  padding-top : 120px;
-}
-
-.features-box {
-  display: inline-block;
-  vertical-align: top;
-  width: 44%;
-  padding-left: 65px;
-  padding-bottom: 60px;
-  text-align: left;
-}
-
-/* Messages */
-.message-section {
-  color: seashell;
-  background: url("https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/1601373_618531998212247_1449805650_n.jpg?oh=61f6bb9244c5e7db34fa66062c85058c&oe=57DDD76F");
-  background-size: cover;
-  width: 100%;
-  height: ;
-  text-align: center;
-}
-
-.message-section-inner {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 300px 0;
-  height: 100%;
-}
-
-.message-section h4 {
-  color: seashell;
-  font-size: 22px;
-  line-height: 40px;
-}
-
 
 /* contact */
 .contact-section {
