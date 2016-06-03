@@ -9,10 +9,10 @@ $(function(){
   $('#read-more').click(function(){
     if($(this).hasClass("active")){
       $('#more-text').fadeOut();
-      $('#read-more').removeClass('active').text("もっと詳しく");
+      $('#read-more').removeClass('active').text("history");
     } else {
     $('#more-text').fadeIn();
-    $('#read-more').addClass('active').text("閉じる");
+    $('#read-more').addClass('active').text("close");
    }
 
   });

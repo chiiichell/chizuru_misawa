@@ -1,3 +1,4 @@
+
 /*-------  ここから共通のCSS（変更不要）  --------*/
 body {
   margin: 0;
@@ -5,7 +6,7 @@ body {
   font-family: 'Catamaran', sans-serif;
   /*-webkit-font-smoothing: antialiased;*/
   font-size: 14px;
-  color: #888;
+  color: dimgray;
 }
 
 ul {
@@ -21,13 +22,14 @@ li {
 
 a {
   text-decoration: none;
-  color: #323A45;
+  color: darkgray;
   transition: all .3s;
 }
 
-a :hover {
-  color: #0dc0c0;
+a:hover {
   text-decoration: none;
+  color: olivedrab;
+  transition: all .3s;
 }
 
 h2, h3, h4, h5, h6 {
@@ -42,7 +44,7 @@ h4, h5 {
 }
 
 .section-title {
-  color: #555;
+  color: dimgray;
   padding-top: 60px;
   padding-bottom: 10px;
   text-align: center;
@@ -57,7 +59,7 @@ h4, h5 {
 
 .gray-section {
   background: #f4f4f4;
-  color: #888;
+  color: darkgray;
 }
 
 /*-------  ここまで共通のCSS（変更不要） --------*/
@@ -79,10 +81,10 @@ header {
 }
 
 .header-logo {
-  color: #777;
-  font-weight: 700;
+  color: dimgray;
+  font-weight: 400;
   font-size: 22px;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Catamaran', sans-serif;
 }
 
 .header-menu-left {
@@ -94,15 +96,41 @@ header {
 }
 
 .header-menu-left a {
-  font-weight: ;
-  color: #323A45;
+  font-weight: 200;
+  color: dimgray;
   line-height: 29px;
   padding: 10px;
 }
 
-.header-menu-right a :hover {
-  color: #0dc0c0;
-  transition: .3s;
+.header-menu-left a:hover {
+  text-decoration: none;
+  color: olivedrab;
+  transition: all .3s;
+}
+
+.header-menu-sns {
+  float: left;
+}
+
+.header-menu-sns li {
+  float:left;
+}
+
+.header-menu-sns a {
+  color: dimgray;
+  line-height: 10px;
+  padding: 10px;
+}
+
+.header-menu-sns a:hover {
+  text-decoration: none;
+  color: olivedrab;
+  transition: all .3s;
+}
+
+.header-menu-sns .fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
 }
 
 /* top content */
@@ -111,7 +139,8 @@ header {
   text-align: center;
   color: #fff;
   height: 700px;
-  background-color: gray;
+  background-image: url("https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/1601373_618531998212247_1449805650_n.jpg?oh=61f6bb9244c5e7db34fa66062c85058c&oe=57DDD76F");
+  background-size: cover;
 }
 
 .inner-bg {
@@ -125,13 +154,13 @@ header {
   margin-bottom: 20px;
 }
 
-.top-description h2 {
-  font-family: 'Dosis', sans-serif;
-  color: #f3f3f3;
-  font-size: 48px;
-  line-height: 54px;
+.top-description h3 {
+  font-family: 'Catamaran', sans-serif;
+  color: seashell;
+  font-size: 30px;
+  line-height: 400px;
   margin: 10px 0 30px 0;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .top-description p {
@@ -150,7 +179,7 @@ header {
   padding: 10px 20px;
   margin: 20px;
   font-weight: 600;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Catamaran', sans-serif;
   font-size: 18px;
   cursor: pointer;
   transition: all .3s;
@@ -159,21 +188,20 @@ header {
 
 .btn-lg {
   line-height: 1.3333333;
-  border-radius: 6px;
-}
+  border-radius: 6px;}
 
 .btn-top-white {
-  background: rgba(250, 250, 250, 0.06);
+  background: rgba(250, 250, 250, 0.05);
   border: 1px solid rgba(250, 250, 250, 0.15);
-  color: rgba(250, 250, 250, 0.9);
-  box-shadow:  0 1px 3px rgba(0, 0, 0, 0.1);
+  color: gray;
+  box-shadow: box-shadow: 0 0px 12px rgba(250, 250, 250, 0.15);
 }
 
-.btn-top-white :hover {
+.btn-top-white:hover {
   background: rgba(250, 250, 250, 0.05);
   border: 1px solid rgba(250, 250, 250, 0.8);
-  color: #fff !important;
-  box-shadow: 0 0px 12px rgba(250, 250, 250, 0.15)
+  color: olivedrab !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .btn .active {
@@ -184,14 +212,20 @@ header {
 
 #more-text {
   display: none;
+  text-align: left;
+  padding-left: 30%;
+  padding-right: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 
 /* profile */
 .profile-section {
   padding-bottom: 60px;
-  color: #888;
+  color: dimgray;
   text-align: center;
+  height: 700px;
 }
 
 .profile-box-wrapper {
@@ -214,11 +248,60 @@ header {
   height: 80px;
 }
 
+/* --skills-- */
+.skills-section {
+  text-align: center;
+  padding-bottom: 60px;
+  height: 700px;
+}
+
+#skills > .container {
+  width: 936px;
+}
+
+.skills-box {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding-top: 80px;
+}
+
+.skills-image {
+  width: 200px;
+  height: 200px;
+  margin: 10px 0;
+  padding: 0px;
+  border-radius: 150px;
+}
+
+#skills-carousel img {
+  display: inline-block;
+}
+
+#skills-carousel li {
+  background-color: dimgray;
+}
+
+.carousel-indicators {
+  z-index: 5;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
 /* works */
 .works-section {
   padding-bottom: 60px;
-  color: #888;
+  color: dimgray;
   text-align: center;
+  height: 700px;
 }
 
 .works-box-wrapper {
@@ -260,129 +343,13 @@ header {
   text-align: left;
 }
 
-/* --Pricing-- */
-.pricing-section {
-  padding-bottom: 50px;
-  text-align: center;
-}
-
-.price-column {
-  display: inline-block;
-  vertical-align: top;
-  width: 31%;
-  padding: 25px 15px 15px 15px;
-  margin: 0 1%;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-  background-color: #fff;
-  text-align: center;
-  font-family: 'Dosis', sans-serif;
-}
-
-.price-column li :first-child {
-  border-top: none;
-}
-
-.price-column li {
-  border-top: 1px solid #eee;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  color: #888;
-  font-weight: 400;
-  padding: 18px 0;
-}
-
-.price-column h2 {
-  color: #fff;
-  font-size: 32px;
-  margin-bottom: 0;
-  padding: 30px 0;
-  background: #323A45;
-  width: 100%;
-}
-
-.price-column h3 {
-  color: #555;
-  background: #f0f0f0;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 40px 0;
-  font-size: 30px;
-  width: 100%;
-}
-
-.price-column-green h2 {
-  background: #0DC0C0;
-}
-
-.price-column ul {
-  padding: 30px;
-}
-
-.btn-pricing {
-  background: #2d323a;
-  border: 1px solid #24282e;
-  color: #c9d1d6;
-}
-
-.btn-pricing :hover {
-  background: #384147;
-  border: 1px solid #32383f;
-  color: #e8edef !important;
-}
-
-/* --Mentors-- */
-.mentors-section {
-  text-align: center;
-  padding-bottom: 60px;
-}
-
-#mentors > .container {
-  width: 936px;
-}
-
-.mentor-box {
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 80px;
-}
-
-.mentor-image {
-  width: 200px;
-  height: 200px;
-  margin: 10px 0;
-  padding: 0px;
-  border-radius: 50%;
-}
-
-#mentor-carousel img {
-  display: inline-block;
-}
-
-#mentor-carousel li {
-  background-color: #869791;
-}
-
-.carousel-indicators {
-  z-index: 5;
-}
-
-.carousel {
-  position: relative;
-}
-
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
 /* Messages */
 .message-section {
-  color: white;
-  background: url("https://lh3.googleusercontent.com/-x9RBGiWQDB4/Uc4XHnPeVdI/AAAAAAAAADE/LSjSXAwHrUQ1Xyiw8iIJi_h1EBDTgGThwCCo/s500/004.JPG");
+  color: seashell;
+  background: url("https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/1601373_618531998212247_1449805650_n.jpg?oh=61f6bb9244c5e7db34fa66062c85058c&oe=57DDD76F");
   background-size: cover;
   width: 100%;
-  height: 100%;
+  height: ;
   text-align: center;
 }
 
@@ -393,17 +360,17 @@ header {
 }
 
 .message-section h4 {
-  color: white;
+  color: seashell;
   font-size: 22px;
   line-height: 40px;
 }
 
 
-/* --Contact-- */
+/* contact */
 .contact-section {
-  background: url("https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/contact.jpg");
+  background: url("https://scontent-nrt1-1.xx.fbcdn.net/t31.0-8/462882_293937340671716_1570544132_o.jpg");
   background-size: cover;
-  color: white;
+  color: seashell;
 }
 
 .contact-section-inner {
@@ -418,7 +385,7 @@ header {
 }
 
 .contact-section h3, .contact-section h4 {
-  color: white;
+  color: seashell;
 }
 
 .contact-section h4 {
@@ -433,7 +400,7 @@ header {
   background: rgba(250, 250, 250, 0.08);
   border: none;
   width: 85%;
-  color: white;
+  color: seashell;
   font-family: 'Catamaran', sans-serif;
   font-size: 16px;
   font-weight: 100;
@@ -459,7 +426,7 @@ textarea {
   font-size: 16px;
   font-weight: 100;
   background: gray;
-  color: white;
+  color: seashell;
   transition: all .3s;
   margin: 10px 0;
   padding: 15px 35px;
@@ -482,7 +449,7 @@ textarea {
 }
 
 .error-message {
-  color: #F51414;
+  color: tomato;
   height: 20px;
 }
 
@@ -500,25 +467,25 @@ textarea {
   text-align: center;
   font-size: 36px;
   line-height: 76px;
-  color: #323A45;
+  color: dimgray;
   padding: 5px;
   transition: all .3s;
 }
 
-.fa {
+.social-section .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
 }
 
-.section-title-followus {
-  color: #555;
+.section-title-followme {
+  color: dimgray;
   padding-top: 60px;
   padding-bottom: 5px;
   text-align: center;
 }
 
-.section-title-followus h3 {
+.section-title-followme h3 {
   font-size: 32px;
 }
 
@@ -526,5 +493,5 @@ textarea {
 footer {
   text-align: center;
   padding-top: 20px;
-  color: gray;
+  color: dimgray;
 }
