@@ -28,7 +28,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: olivedrab;
+  color: rosybrown;
   transition: all .3s;
 }
 
@@ -38,9 +38,9 @@ h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-h4, h5 {
-  color: #444;
-  font-size: 18px;
+h4, h5, h6 {
+  color: dimgray;
+  font-size: 12px;
 }
 
 .section-title {
@@ -73,9 +73,19 @@ header {
 
 .header-title {
   float: right;
+  text-decoration: none;
 }
 
-.header-logo {
+.header-title a {
+  text-decoration: none;
+  color: dimgray;
+  font-weight: 400;
+  font-size: 22px;
+  font-family: 'Catamaran', sans-serif;
+}
+
+.header-title a:hover {
+  text-decoration: none;
   color: dimgray;
   font-weight: 400;
   font-size: 22px;
@@ -100,7 +110,7 @@ header {
 
 .header-menu-left a:hover {
   text-decoration: none;
-  color: olivedrab;
+  color: rosybrown;
   transition: all .3s;
 }
 
@@ -121,7 +131,7 @@ header {
 
 .header-menu-sns a:hover {
   text-decoration: none;
-  color: olivedrab;
+  color: rosybrown;
   transition: all .3s;
 }
 
@@ -135,8 +145,8 @@ header {
   margin: 0 auto;
   text-align: center;
   color: whitesmoke;
-  height: 700px;
-  background-image: url("https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/1601373_618531998212247_1449805650_n.jpg?oh=61f6bb9244c5e7db34fa66062c85058c&oe=57DDD76F");
+  height: 800px;
+  background-image: url("https://lh3.googleusercontent.com/zf0ZEgRdqCePWlYWSLjRBwVcgzLwSawIw8EMwHddw98PBwd02aHJCvgs0-SmdHFl1SCQqpPyv6UyCR7PM8wgVW-PxEdML0keXR1jTL9y0OIOvfE9lluEKb8qehPxJUm2Cs_NxLRn6j7s_oSzjV0UlZ2imNNW-OfG0RWIXRb7txhLzBQi-VI7ynRZN1lZATPeYgjDacyjEXxfAInDSQsvR0KA3_eYcAHKWwzcHIVyuYEuXnft2GzxJ5BLFOWsNUvFKGIMEYmL2Ra33EkQirDZ8phXMHGv2ZfUcL3uAQgWXJMnNcvRllkUxQHQXHxY9UdcYe1wjzbWzGULxNrLiWxlllV9HxTSu0OF92nu48GfH7YgcwRMpzpBdGqEhN-ych_Mit-nXqmsqOd0hk2fIAPtHS6S_kkmLjnRKUpKa3PyGaP9CObbisprM5Pc1BMnLE975FTa1VgBTvJJKONNJAgLVDO65Kyd2Tg8pzGM3Aukqtouu86RX5-UG-KH2Nrcyry8gYW5IaT-eCGOrpI6fyMsuGRh6IToKdR743trfHJ24OYD9NsszOLlSSedgQDbyAQAT-xYuWNDg4P5q3fWa_5VvBg49p5jlXI=w2046-h1410-no");
   background-size: cover;
 }
 
@@ -170,17 +180,31 @@ header {
 }
 
 .about-icon img {
-  max-height: 400px;
-  padding: 10px 10px;
+  max-height: 350px;
+  padding: 30px 30px;
+  border-radius: 500px;
+}
+
+.profile h5 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+.profile h6 {
+  text-align: left;
+  padding-left: 35%;
+  padding-right: 35%;
+  padding-bottom: 5px;
 }
 
 .btn {
   display: inline-block;
-  padding: 20px 20px;
-  margin: 40px;
-  font-weight: 400;
+  padding: 7px 20px;
+  margin: 20px;
+  font-weight: 200;
   font-family: 'Catamaran', sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   cursor: pointer;
   transition: all .3s;
   border-radius: 4px;
@@ -192,7 +216,7 @@ header {
 }
 
 .btn-top-white {
-  background: gray;
+  background: rosybrown;
   border: 1px solid rgba(250, 250, 250, 0.15);
   color: whitesmoke;
   box-shadow: box-shadow: 0 0px 12px rgba(250, 250, 250, 0.15);
@@ -214,24 +238,28 @@ header {
 #more-text {
   display: none;
   text-align: left;
-  padding-left: 25%;
+  padding-left: 32%;
   padding-right: 25%;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-#more-text h5{
+#more-text h5 {
   font-family: 'Catamaran', sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 200;
   color: dimgray;
   text-align: center;
 }
 
+#more-text li {
+  font-size: 12px;
+}
+
 /* --skills-- */
 .skills-section {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   height: 700px;
   background: whitesmoke;
 }
@@ -244,7 +272,7 @@ header {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 80px;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .skills-image {
@@ -282,7 +310,7 @@ header {
   padding-bottom: 60px;
   color: dimgray;
   text-align: center;
-  height: 700px;
+  height: 710px;
   background: whitesmoke;
 }
 
@@ -415,6 +443,7 @@ textarea {
 }
 
 .social-section .fa {
+  text-decoration: none;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;

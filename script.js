@@ -9,7 +9,7 @@ $(function(){
   $('#read-more').click(function(){
     if($(this).hasClass("active")){
       $('#more-text').fadeOut();
-      $('#read-more').removeClass('active').text("profile");
+      $('#read-more').removeClass('active').text("more");
     } else {
     $('#more-text').fadeIn();
     $('#read-more').addClass('active').text("close");
