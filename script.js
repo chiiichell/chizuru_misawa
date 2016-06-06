@@ -5,7 +5,7 @@ $(function(){
     return false;
   })
 
-  // もっと詳しく
+  // more
   $('#read-more').click(function(){
     if($(this).hasClass("active")){
       $('#more-text').fadeOut();
@@ -28,7 +28,7 @@ $(function(){
   );
 
 // works
-  $('.works-box').hover(
+  $('.icon-image').hover(
    function(){
     $(this).find('p').fadeIn(500);
     },
@@ -37,37 +37,24 @@ $(function(){
     }
   );
 
-  // カルーセルスライダー部分
+  // crousel
   $('.carousel').carousel({
     interval: 2500
   })
 
-  // コラム画像
-  $('.column-image').hover(
-     function(){
-       $(this).addClass('zoom');
-       $(this).children('.zoom-black').fadeIn(300);
-      },
-      function(){
-       $(this).removeClass('zoom');
-       $(this).children('.zoom-black').fadeOut(300);
-      }
-  );
+  // // icon zoom
+  // $('.icon-image').hover(
+  //    function(){
+  //      $(this).addClass('zoom');
+  //      $(this).children('.zoom-black').fadeIn(300);
+  //     },
+  //     function(){
+  //      $(this).removeClass('zoom');
+  //      $(this).children('.zoom-black').fadeOut(300);
+  //     }
+  // );
 
-    // コラム整理
-  $('.filter-item').click(function(){
-    $('.filter-item').removeClass('active');
-    $(this).addClass('active');
-    var id = $(this).attr('id');
-    if (id === 'all'){
-    $('.column-box').fadeIn();
-    } else {
-      $('.column-box-wrapper').children('.' + id).fadeIn();
-      $('.column-box').not('.' + id).fadeOut();
-    }
-  });
-
-    // お問い合わせフォーム
+    // contact
   $('.contact-form form').submit(function(){
     // ”error_flag = false”はエラーを知らせる旗が寝ている状態
     var error_flag = false;
@@ -76,7 +63,7 @@ $(function(){
       var body = $(this).val();  
       if(!body){
       // エラーを表示
-        $(this).prev('.error-message').text('入力してください');
+        $(this).prev('.error-message').text('error');
         error_flag = true;
       } else {
 　　　   $(this).prev('.error-message').text('');
@@ -84,7 +71,7 @@ $(function(){
     });
 
     if(!error_flag){
-      $('.contact-form').html('<h4>お問い合わせありがとうございます</h4>');
+      $('.contact-form').html('<h4>thank you !</h4>');
     }
     return false;
   });

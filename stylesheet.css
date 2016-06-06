@@ -1,5 +1,4 @@
 
-/*-------  ここから共通のCSS（変更不要）  --------*/
 body {
   margin: 0;
   font-weight: 10;
@@ -40,17 +39,18 @@ h2, h3, h4, h5, h6 {
 
 h4, h5, h6 {
   color: dimgray;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .section-title {
   color: dimgray;
-  padding-top: 60px;
+  padding-top: 80px;
   padding-bottom: 10px;
   text-align: center;
 }
 
 .section-title h3 {
+  padding-top: 50px;
   margin: 10px 0;
   font-size: 32px;
   font-weight: 300;
@@ -180,28 +180,44 @@ header {
 }
 
 .about-icon img {
-  max-height: 350px;
-  padding: 30px 30px;
-  border-radius: 500px;
+  max-height: 400px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-right: 30px;
+  margin-left: 123px;
+  float: left;
+}
+
+.profile {
+  color: gray;
+  padding-top: 20px;
+  width: 600px;
+  margin-left: auto;
 }
 
 .profile h5 {
-  text-align: center;
-  padding-top: 20px;
-  font-size: 15px;
+  font-size: 14px;
+  color: gray;
+  padding-bottom: 8px;
+  margin-right: auto;
+  width: 270px;
 }
 
 .profile h6 {
   text-align: left;
-  padding-left: 35%;
-  padding-right: 35%;
-  padding-bottom: 5px;
+  font-size: 12px;
+  color: gray;
+}
+
+.profile ul {
+  text-align: left;
+  font-size: 12px;
 }
 
 .btn {
   display: inline-block;
   padding: 7px 20px;
-  margin: 20px;
+  margin-top: 15px;
   font-weight: 200;
   font-family: 'Catamaran', sans-serif;
   font-size: 15px;
@@ -235,26 +251,28 @@ header {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
 }
 
+.more-btn {
+  margin-left: auto;
+  margin-right: auto;
+  width: 77px;
+}
+
 #more-text {
   display: none;
   text-align: left;
-  padding-left: 32%;
-  padding-right: 25%;
-  padding-top: 20px;
+  padding-left: 17%;
+  padding-right: 15%;
+  padding-top: 40px;
   padding-bottom: 20px;
-}
-
-#more-text h5 {
   font-family: 'Catamaran', sans-serif;
-  font-size: 15px;
-  font-weight: 200;
-  color: dimgray;
-  text-align: center;
+  font-size: 12px;
+  color: gray;
 }
 
-#more-text li {
-  font-size: 12px;
+iframe {
+  padding-left: 16%;
 }
+
 
 /* --skills-- */
 .skills-section {
@@ -320,18 +338,36 @@ header {
 }
 
 .works-box {
-  display: inline-block;
-  vertical-align: top;
-  width: 38%;
-  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding-top: 40px;
 }
 
-.works-box p {
-  display: none;
+.works-content h4 {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.works-content p {
+  color: gray;
+  font-size: 12px;
+  text-align: center;
 }
 
 .works-content {
   height: 80px;
+
+}
+
+.icon img {
+  width: 200px;
+  height: 200px;
+  margin: 10px 0;
+  padding: 0px;
+  border-radius: 150px;
+  text-align: center;
+  cursor: pointer;
 }
 
 /* contact */
@@ -354,10 +390,12 @@ header {
 
 .contact-section h3, .contact-section h4 {
   color: seashell;
+  font-weight: 100;
 }
 
 .contact-section h4 {
-  font-size: 22px;
+  font-size: 16px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 
@@ -391,7 +429,7 @@ textarea {
 
 .btn-contact {
   font-family: 'Catamaran', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 100;
   background: gray;
   color: seashell;
